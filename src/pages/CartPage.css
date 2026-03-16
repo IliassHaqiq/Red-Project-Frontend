@@ -1,0 +1,42 @@
+.cart-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 48px;
+  align-items: start;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cart-item-name { font-weight: 500; margin-bottom: 4px; }
+.cart-item-unit { color: var(--muted); font-size: 13px; }
+.cart-item-total {
+  text-align: right;
+  min-width: 80px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  color: var(--red);
+}
+
+.qty-ctrl  { display: flex; align-items: center; gap: 12px; }
+.qty-btn   { width: 30px; height: 30px; border: 1px solid var(--border); background: transparent; color: var(--text); font-size: 18px; border-radius: 2px; transition: all 0.2s; }
+.qty-btn:hover { border-color: var(--red); color: var(--red); }
+.qty-value { min-width: 32px; text-align: center; }
+
+.cart-summary       { padding: 28px; }
+.cart-summary-title { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
+.cart-summary-row   { display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 13px; color: var(--muted); }
+.cart-summary-divider { height: 1px; background: var(--border); margin: 16px 0; }
+.cart-summary-total { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; font-weight: 500; }
+.cart-total-amount  { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--red); }
+.cart-order-btn     { width: 100%; justify-content: center; }
+
+@media (max-width: 768px) {
+  .cart-layout { grid-template-columns: 1fr; }
+}
