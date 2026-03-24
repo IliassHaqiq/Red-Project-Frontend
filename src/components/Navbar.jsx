@@ -10,7 +10,21 @@ export default function Navbar({ user, page, setPage, cartCount, onLogout, notif
     <nav className="nav">
       {/* Logo */}
       <div className="nav-logo" onClick={() => setPage('shop')}>
-        Rouge<span className="nav-logo-dot">.</span>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* Shopping cart icon */}
+          <path 
+            d="M6 6h3l3.6 12.8a2 2 0 0 0 1.9 1.4h9.8a2 2 0 0 0 1.9-1.4L29 10H10" 
+            stroke="#dc2626" 
+            strokeWidth="2.5" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+          />
+          <circle cx="13" cy="27" r="1.5" fill="#dc2626"/>
+          <circle cx="24" cy="27" r="1.5" fill="#dc2626"/>
+        </svg>
+        <span className="nav-logo-text">
+          Cart<span className="nav-logo-highlight">ify</span>
+        </span>
       </div>
 
       {/* Nav links */}

@@ -15,17 +15,31 @@
 
 /* ── Logo ── */
 .nav-logo {
-  font-family: 'Instrument Serif', Georgia, serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--text);
-  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   cursor: pointer;
-  margin-right: 16px;
-  flex-shrink: 0;
-  transition: opacity 0.15s;
+  user-select: none;
+  transition: opacity 0.2s;
 }
-.nav-logo:hover { opacity: 0.75; }
+.nav-logo:hover {
+  opacity: 0.8;
+}
+
+.nav-logo svg {
+  flex-shrink: 0;
+}
+
+.nav-logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #0a0a0a;
+}
+
+.nav-logo-highlight {
+  color: #dc2626;
+}
 .nav-logo-dot { color: var(--red); }
 
 /* ── Links ── */

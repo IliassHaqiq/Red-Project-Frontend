@@ -17,10 +17,31 @@
 }
 
 .auth-logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 42px;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8px;
 }
+
+
+.auth-logo svg {
+  flex-shrink: 0;
+}
+
+
+.auth-logo-text {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #0a0a0a;
+}
+
+.auth-logo-highlight {
+  color: #dc2626;
+}
+
+
 .auth-logo span { color: var(--red); }
 
 .auth-tagline {
@@ -61,3 +82,5 @@
   width: 100%;
   justify-content: center;
 }
+
+
