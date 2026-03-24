@@ -166,7 +166,7 @@ export default function AdminProducts({ token, addToast }) {
                       </span>
                     </td>
                     <td style={{ fontWeight: 600, fontVariantNumeric: 'tabular-nums' }}>
-                      {Number(p.price).toFixed(2)} €
+                      {Number(p.price).toFixed(2)} DH
                     </td>
                     <td>
                       <span style={{
@@ -222,7 +222,7 @@ export default function AdminProducts({ token, addToast }) {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
               <div className="field">
-                <label className="label">Prix (€)</label>
+                <label className="label">Prix (DH)</label>
                 <input className="input" type="number" step="0.01" min="0" placeholder="0.00" value={form.price} onChange={setF('price')} />
               </div>
               <div className="field">

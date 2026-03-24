@@ -50,7 +50,7 @@ export default function AdminOrders({ token, addToast }) {
             Revenu total
           </div>
           <div style={{ fontFamily: "'Instrument Serif', serif", fontSize: 26, letterSpacing: '-0.03em', color: 'var(--text)' }}>
-            {totalRevenue.toFixed(2)} €
+            {totalRevenue.toFixed(2)} DH
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@ export default function AdminOrders({ token, addToast }) {
                   <td style={{ color: 'var(--text-2)' }}>{o.customerEmail}</td>
                   <td>
                     <span style={{ fontWeight: 600, fontVariantNumeric: 'tabular-nums' }}>
-                      {Number(o.totalAmount).toFixed(2)} €
+                      {Number(o.totalAmount).toFixed(2)} DH
                     </span>
                   </td>
                   <td style={{ color: 'var(--muted-2)', fontSize: 12.5 }}>

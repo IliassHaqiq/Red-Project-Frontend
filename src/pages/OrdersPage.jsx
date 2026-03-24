@@ -56,7 +56,7 @@ export default function OrdersPage({ token }) {
                 <span className={`status-badge status-${order.status}`}>
                   {STATUS_LABELS[order.status] || order.status}
                 </span>
-                <span className="order-total">{Number(order.totalAmount).toFixed(2)} €</span>
+                <span className="order-total">{Number(order.totalAmount).toFixed(2)} DH</span>
               </div>
             </div>
 
@@ -67,7 +67,7 @@ export default function OrdersPage({ token }) {
                     <span className="order-item-name">{item.productName}</span>
                     <span className="order-item-qty">× {item.quantity}</span>
                   </span>
-                  <span className="order-item-price">{Number(item.lineTotal).toFixed(2)} €</span>
+                  <span className="order-item-price">{Number(item.lineTotal).toFixed(2)} DH</span>
                 </div>
               ))}
             </div>

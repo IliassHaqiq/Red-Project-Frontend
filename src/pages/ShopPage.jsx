@@ -124,7 +124,7 @@ export default function ShopPage({ token, onAddToCart, addToast, setPage, setDet
                       <p className="product-desc">{p.description}</p>
                     )}
                     <div className="product-card-footer">
-                      <span className="product-price">{Number(p.price).toFixed(2)} €</span>
+                      <span className="product-price">{Number(p.price).toFixed(2)} DH</span>
                       <span className={`product-stock ${p.stock > 0 ? 'in-stock' : 'out-stock'}`}>
                         {p.stock > 0 ? `✓ ${p.stock} en stock` : '✗ Rupture'}
                       </span>

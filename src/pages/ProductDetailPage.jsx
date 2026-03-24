@@ -60,7 +60,7 @@ export default function ProductDetailPage({ product, token, onAddToCart, setPage
         <div className="product-info">
           <div className="product-category">{product.category}</div>
           <h1>{product.name}</h1>
-          <div className="product-price">{Number(product.price).toFixed(2)} €</div>
+          <div className="product-price">{Number(product.price).toFixed(2)} DH</div>
 
           {product.description && (
             <>
@@ -83,7 +83,7 @@ export default function ProductDetailPage({ product, token, onAddToCart, setPage
                   <button onClick={() => setQty(q => Math.min(product.stock, q + 1))}>+</button>
                 </div>
                 <span style={{ fontSize: 13, color: 'var(--muted-2)' }}>
-                  {(Number(product.price) * qty).toFixed(2)} € au total
+                  {(Number(product.price) * qty).toFixed(2)} DH au total
                 </span>
               </div>
 

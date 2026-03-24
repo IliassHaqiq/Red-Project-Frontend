@@ -57,7 +57,7 @@ export default function CartPage({ cart, setCart, token, addToast, setPage }) {
             <div key={item.id} className="cart-item">
               <div className="cart-item-info">
                 <div className="cart-item-name">{item.name}</div>
-                <div className="cart-item-unit">{Number(item.price).toFixed(2)} € / unité</div>
+                <div className="cart-item-unit">{Number(item.price).toFixed(2)} DH / unité</div>
               </div>
               <div className="qty-ctrl">
                 <button className="qty-btn" onClick={() => updateQty(item.id, -1)}>−</button>
@@ -65,7 +65,7 @@ export default function CartPage({ cart, setCart, token, addToast, setPage }) {
                 <button className="qty-btn" onClick={() => updateQty(item.id, +1)}>+</button>
               </div>
               <div className="cart-item-total">
-                {(Number(item.price) * item.qty).toFixed(2)} €
+                {(Number(item.price) * item.qty).toFixed(2)} DH
               </div>
             </div>
           ))}
@@ -77,7 +77,7 @@ export default function CartPage({ cart, setCart, token, addToast, setPage }) {
           <div className="cart-summary-body">
             <div className="cart-summary-row">
               <span>Sous-total ({itemCount} article{itemCount !== 1 ? 's' : ''})</span>
-              <span>{total.toFixed(2)} €</span>
+              <span>{total.toFixed(2)} DH</span>
             </div>
             <div className="cart-summary-row">
               <span>Livraison</span>
@@ -86,7 +86,7 @@ export default function CartPage({ cart, setCart, token, addToast, setPage }) {
             <div className="cart-summary-divider" />
             <div className="cart-summary-total">
               <span className="cart-summary-total-label">Total TTC</span>
-              <span className="cart-total-amount">{total.toFixed(2)} €</span>
+              <span className="cart-total-amount">{total.toFixed(2)} DH</span>
             </div>
             <button className="cart-order-btn" onClick={placeOrder} disabled={loading}>
               {loading ? <span className="spinner" style={{ borderTopColor: '#fff', borderColor: 'rgba(255,255,255,0.3)' }} /> : (
